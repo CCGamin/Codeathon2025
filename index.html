@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancing the Scale</title>
+    <link rel="stylesheet" href="Codeathon.css">
+</head>
+<body>
+<div id="popup" class="popup">
+    <button onclick="enterLibrary()" id="enter-button">Enter the Library</button>
+</div>
+<div id="journal" class="journal" style="display: none;">
+    <header>
+        <h1>Balancing the Scale</h1>
+    </header>
+    <main>
+        <section class="activist-checklist">
+            <h2>Becoming an Activist</h2>
+            <ul>
+                <li><input type="checkbox" id="step1"> <label for="step1">Commit to small actions</label></li>
+                <li><input type="checkbox" id="step2"> <label for="step2">Educate yourself on human rights issues</label></li>
+                <li><input type="checkbox" id="step3"> <label for="step3">Join local groups advocating for change</label></li>
+                <li><input type="checkbox" id="step4"> <label for="step4">Get involved in the political process</label></li>
+                <li><input type="checkbox" id="step5"> <label for="step5">Seek relevant classes and degrees if you’re a student</label></li>
+                <li><input type="checkbox" id="step6"> <label for="step6">Gain experience through hands-on involvement</label></li>
+                <li><input type="checkbox" id="step7"> <label for="step7">Be flexible and ready to assist where needed</label></li>
+            </ul>
+        </section>
+        <div class="flashcards">
+            <div class="flashcard" onclick="flipCard(this)">
+                <div class="card-front">
+                    <h3>Peaceful Societies</h3>
+                </div>
+                <div class="card-back">
+                    <p>Discrimination has many intersecting forms, from religion, ethnicity to gender and sexual preference, pointing to the urgent need for measures to tackle any kind of discriminatory practices and hate speech.</p>
+                </div>
+            </div>
+            <div class="flashcard" onclick="flipCard(this)">
+                <div class="card-front">
+                    <h3>Inclusive Societies</h3>
+                </div>
+                <div class="card-back">
+                    <p>Women and children with lack of access to healthcare die each day from preventable diseases such as measles and tuberculosis or in childbirth. Older persons, migrants and refugees face lack of opportunities and discrimination – an issue that affects every country in the world. One in five persons reported being discriminated against on at least one ground of discrimination prohibited by international human rights law.</p>
+                </div>
+            </div>
+            <div class="flashcard" onclick="flipCard(this)">
+                <div class="card-front">
+                    <h3>Sustainable Development</h3>
+                </div>
+                <div class="card-back">
+                    <p>Inequalities based on income, sex, age, disability, sexual orientation, race, class, ethnicity, religion and opportunity continue to persist across the world. Inequality threatens long-term social and economic development, harms poverty reduction and destroys people’s sense of fulfillment and self-worth. This, in turn, can breed crime, disease and environmental degradation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="audio-controls">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5" onchange="setVolume(this.value)">
+            <button onclick="toggleMute()">Mute/Unmute</button>
+        </div>
+    </main>
+</div>
+<audio id="click-sound" src="click.mp3"></audio>
+<audio id="background-music" src="background-music.mp3" loop></audio>
+<audio id="page-flip-sound" src="page-flip.mp3"></audio>
+<script src="Codeathon.js"></script>
+</body>
+</html>
