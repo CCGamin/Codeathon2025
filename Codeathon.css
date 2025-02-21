@@ -1,207 +1,219 @@
 body {
-    font-family: 'Times New Roman', serif; /* Old-time serif font */
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
- }
- 
- 
- .popup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('Background1.jpg');
-    background-size: cover;  /* Ensure the background image covers the entire screen */
-    background-position: center;
- }
- 
- 
- #enter-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    font-family: 'Times New Roman', serif;
-    background-image: url('button-background.jpg');
-    background-size: cover;
-    background-position: center;
-    border: none;
-    border-radius: 50px;
-    color: #C8B9A1;
- }
- 
- 
- .journal {
-    display: none;
-    max-width: 100%;  /* Set max-width to 100% to fit the full screen */
-    height: 100vh;  /* Ensure the div covers the entire viewport height */
-    margin: 0 auto;
-    padding: 20px;
-    background-image: url('Background2.jpg');
-    background-size: cover;  /* Ensure the background image covers the entire screen */
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 1s ease;
-    font-family: 'Times New Roman', serif;
- }
- 
- 
- header {
-    text-align: center;
-    padding: 20px 0;
- }
- 
- 
- header h1 {
-    font-size: 2em;
-    margin: 0;
-    color: #d4beaa;
-    background-image: url('flash-background.jpg');
-    font-family: 'Times New Roman', serif;
-    padding: 5px 10px;
-       border-radius: 10px;
- }
- 
- 
- main {
-    display: flex;
-    padding: 20px;
- }
- 
- 
- .activist-checklist {
-    width: 30%;
-    padding-right: 20px;
- }
- 
- 
- .flashcards {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 20px;
- }
- 
- 
- .activist-checklist h2 {
-    color: #d4beaa;
-    font-family: 'Times New Roman', serif;
-    background-image: url('flash-background.jpg');
-    max-width: 80%;
-    padding: 10px 50px;
-    border-radius: 25px;
- }
- 
- 
- .activist-checklist ul {
-    list-style-type: none;
-    padding: 0;
-    background-image: url('flash-background.jpg');
-    padding: 15px 15px;
-    border-radius: 25px;
- }
- 
- 
- .activist-checklist li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-family: 'Times New Roman', serif;
-    color: #d4beaa
- }
- 
- 
- .activist-checklist input[type="checkbox"] {
-    margin-right: 10px;
- }
- 
- 
- .flashcard {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background-image: url('flash-background.jpg'); /* Flashcard background image; PLS REMEMBER */
-    background-size: cover;  /* Ensure the background image covers the entire element */
-    background-position: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    color: #d4beaa
- }
- 
- 
- .flashcard:hover {
-    transform: scale(1.05);
- }
- 
- 
- .flashcard .card-front, .flashcard .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 5px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', serif;
- }
- 
- 
- .flashcard .card-front {
-    background-image: url('flash-background.jpg'); /* Flashcard front background image */
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- 
- .flashcard .card-back {
-    background-image: url('flash-background.jpg'); /* Flashcard back background image */
-    transform: rotateY(180deg);
- }
- 
- 
- .flashcard.flipped {
-    transform: rotateY(180deg);
- }
- 
- 
- .flashcard h3 {
-    margin: 0;
-    font-family: 'Times New Roman', serif;
- }
- 
- 
- .audio-controls {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
- 
- }
- 
- 
- .audio-controls label {
-    font-family: 'Times New Roman', serif;
-    margin-right: 10px;
- }
- 
- 
- .audio-controls input[type="range"] {
-    margin-right: 10px;
- }
- 
- 
- .audio-controls button {
-    padding: 5px 10px;
-    font-family: 'Times New Roman', serif;
-    background-color: #d4af37; /* Golden button */
+   font-family: 'Times New Roman', serif;
+   background-color: #f9f9f9;
+   margin: 0;
+   padding: 0;
+}
+
+
+.popup {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-image: url('background.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+
+#enter-button {
+   padding: 10px 20px;
+   font-size: 1.2em;
+   cursor: pointer;
+   font-family: 'Times New Roman', serif;
+   background-image: url('button-background.jpg');
+   background-size: cover;
+   background-position: center;
+   border: none;
+   border-radius: 50px;
+   color: #C8B9A1;
+}
+
+
+.journal {
+   display: none;
+   max-width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   padding: 20px;
+   background-image: url('background2.jpg');
+   background-size: cover;
+   background-position: center;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   transition: background-color 1s ease;
+   font-family: 'Times New Roman', serif;
+}
+
+
+header {
+   text-align: center;
+   padding: 20px 0;
+}
+
+
+header h1 {
+   font-size: 2em;
+   margin: 0;
+   color: #d4beaa;
+   background-image: url('flash-background.jpg');
+   font-family: 'Times New Roman', serif;
+   padding: 5px 10px;
+   border-radius: 10px;
+   width: 500px;
+   height: 35px;
+}
+
+
+main {
+   display: flex;
+   padding: 20px;
+}
+
+
+.activist-checklist {
+   width: 30%;
+   padding-right: 20px;
+}
+
+
+.flashcards {
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding-left: 20px;
+}
+
+
+.activist-checklist h2 {
+   color: #d4beaa;
+   font-family: 'Times New Roman', serif;
+   background-image: url('flash-background.jpg');
+   max-width: 80%;
+   padding: 10px 50px;
+   border-radius: 25px;
+}
+
+
+.activist-checklist ul {
+   list-style-type: none;
+   padding: 0;
+   background-image: url('flash-background.jpg');
+   padding: 15px 15px;
+   border-radius: 25px;
+}
+
+
+.activist-checklist li {
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   font-family: 'Times New Roman', serif;
+   color: #d4beaa
+}
+
+
+.activist-checklist input[type="checkbox"] {
+   margin-right: 10px;
+}
+
+
+.flashcard {
+   position: relative;
+   width: 100%;
+   height: 150px;
+   background-image: url('flash-background.jpg'); 
+   background-size: cover;  
+   background-position: center;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   margin-bottom: 20px;
+   transition: transform 0.3s;
+   cursor: pointer;
+   transform-style: preserve-3d;
+   transition: transform 0.6s;
+   color: #d4beaa
+}
+
+
+.flashcard:hover {
+   transform: scale(1.05);
+}
+
+
+.flashcard .card-front, .flashcard .card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 5px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', serif;
+}
+
+
+.flashcard .card-front {
+   background-image: url('flash-background.jpg'); 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.flashcard .card-back {
+   background-image: url('flash-background.jpg'); 
+   transform: rotateY(180deg);
+}
+
+
+.flashcard.flipped {
+   transform: rotateY(180deg);
+}
+
+
+.flashcard h3 {
+   margin: 0;
+   font-family: 'Times New Roman', serif;
+}
+
+
+.audio-controls {
+   display: flex;
+   align-items: center;
+   margin-top: 0px;
+background-color: #554c39;
     border: none;
     border-radius: 5px;
     color: #fff;
-    cursor: pointer;
- }
+    width: 300px;
+    height: 50px;
+}
+
+
+.audio-controls label {
+   font-family: 'Times New Roman', serif;
+   margin-right: 10px;
+    background-color: #554c39;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.audio-controls input[type="range"] {
+   margin-right: 10px;
+
+}
+
+
+.audio-controls button {
+   padding: 5px 10px;
+   font-family: 'Times New Roman', serif;
+   background-color: #554c39; 
+   border: none;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+}
