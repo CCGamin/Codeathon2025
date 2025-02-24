@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balancing the Scale</title>
-    <link rel="stylesheet" href="Codeathon.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="popup" class="popup">
-    <button onclick="enterLibrary()" id="enter-button">Enter the Library</button>
+    <div class="intro-message">
+        <h1>Welcome to the Library</h1>
+        <p>Embark on a journey of knowledge and discovery. Take your first step by entering the library and start your adventure!</p>
+        <button onclick="enterLibrary()" id="enter-button">Enter the Library</button>
+    </div>
 </div>
 <div id="journal" class="journal" style="display: none;">
     <header>
@@ -63,6 +67,6 @@
 <audio id="click-sound" src="click.mp3"></audio>
 <audio id="background-music" src="background-music.mp3" loop></audio>
 <audio id="page-flip-sound" src="page-flip.mp3"></audio>
-<script src="Codeathon.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
