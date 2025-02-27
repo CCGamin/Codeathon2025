@@ -6,6 +6,8 @@
     <title>Balancing the Scale</title>
     <link rel="stylesheet" href="Codeathon.css">
     <link rel="icon" type="image/x-icon" href="Background2.jpg">
+    <style>
+    .link { color: #000000; } 
 </head>
 <body>
 <div id="popup" class="popup">
@@ -65,14 +67,14 @@
                 </div>
                 <div class="card-back">
                     <center>
-                  <a href="https://studio.code.org/projects/applab/XgZ7uBHxQYuWI2Ng0BtIJ3ojj4aRS4eaINz9OTH9C3Y" target="_blank">Use What You've Learn To Thrive For the Greater Good!</a>
+                  <a class="link" href="https://studio.code.org/projects/applab/XgZ7uBHxQYuWI2Ng0BtIJ3ojj4aRS4eaINz9OTH9C3Y" target="_blank">Use What You've Learn To Thrive For the Greater Good!</a>
                     </center>
                 </div>
             </div>
         </div>
         <div class="audio-controls">
             <label for="volume">Volume:</label>
-            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5" onchange="setVolume(this.value)">
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0" onchange="setVolume(this.value)">
             <button onclick="toggleMute()">Mute/Unmute</button>
         </div>
     </main>
