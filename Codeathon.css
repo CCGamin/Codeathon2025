@@ -5,10 +5,9 @@ body {
    padding: 0;
 }
 
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+a:link, a:visited {
+  color: white;
+  text-align: center;
 }
 
 .popup {
