@@ -15,7 +15,7 @@
     <div class="intro-message">
         <h1>Welcome to the Library</h1>
         <p>Embark on a journey of knowledge and discovery. Take your first step by entering the library and start your adventure! And as always, Knowledge Is Power!</p>
-        <button onclick="enterLibrary()" id="enter-button">Enter the Library</button>
+        <button onclick="enterLibrary()" onclick="toggleMute()" id="enter-button">Enter the Library</button>
     </div>
 </div>
 <div id="journal" class="journal" style="display: none;">
@@ -75,7 +75,6 @@
         </div>
         <div class="audio-controls">
             <label for="volume">Volume:</label>
-            <audio controls muted>
             <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5" onchange="setVolume(this.value)">
             <button onclick="toggleMute()">Mute/Unmute</button>
         </div>
