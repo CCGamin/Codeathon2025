@@ -5,6 +5,12 @@ body {
    padding: 0;
 }
 
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .popup {
    display: flex;
    align-items: center;
